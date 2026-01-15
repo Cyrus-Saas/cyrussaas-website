@@ -21,10 +21,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Cyrus</span>
-            <span className="text-2xl font-bold text-accent">SaaS</span>
-          </div>
+          <img src="/cyrussaas-logo.png" alt="CyrusSaaS Logo" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -33,11 +30,10 @@ const Header = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                isActive(link.path)
-                  ? "text-accent"
-                  : "text-muted-foreground"
-              }`}
+              className={`text-sm font-medium transition-colors hover:text-accent ${isActive(link.path)
+                ? "text-accent"
+                : "text-muted-foreground"
+                }`}
             >
               {link.name}
             </Link>
@@ -70,11 +66,10 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  isActive(link.path)
-                    ? "text-accent"
-                    : "text-muted-foreground"
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-accent ${isActive(link.path)
+                  ? "text-accent"
+                  : "text-muted-foreground"
+                  }`}
               >
                 {link.name}
               </Link>

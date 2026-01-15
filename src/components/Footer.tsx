@@ -10,11 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-primary-foreground">Cyrus</span>
-              <span className="text-2xl font-bold text-accent">SaaS</span>
+              <img src="/cyrussaas-logo.png" alt="CyrusSaaS Logo" className="h-8 w-auto" />
             </Link>
             <p className="text-primary-foreground/80 max-w-md">
-              Empowering startups and growing companies to scale efficiently with 
+              Empowering startups and growing companies to scale efficiently with
               custom IT solutions and MicroSaaS integrations.
             </p>
           </div>
