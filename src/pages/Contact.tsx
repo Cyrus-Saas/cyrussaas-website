@@ -40,6 +40,9 @@ const Contact = () => {
     }
   };
 
+  // TODO: REPLACE THIS URL WITH YOUR DEPLOYED GOOGLE APPS SCRIPT WEB APP URL
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw0YgaM1mf6ntHtAD7JdvLECQ5NAOsgGtHcoysWikRD_b5Bd4Sz8Xut4BBUVS0b5RkR/exec";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrors({});
@@ -59,12 +62,19 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // TODO: Integrate with Supabase Edge Function + Resend
-    // For now, show success message
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      
+      // Send data to Google Apps Script
+      // mode: 'no-cors' is required when calling GAS Web App from browser to avoid CORS errors
+      // The downside is we cannot read the response, so we assume success if no network error occurs.
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
       toast({
         title: "Request Submitted!",
         description: "Thank you for contacting us. We'll get back to you soon.",
@@ -79,9 +89,10 @@ const Contact = () => {
         message: "",
       });
     } catch (error) {
+      console.error("Submission error:", error);
       toast({
         title: "Submission Failed",
-        description: "Something went wrong. Please try again later.",
+        description: "Something went wrong. Please check your connection and try again.",
         variant: "destructive",
       });
     } finally {
@@ -117,7 +128,7 @@ const Contact = () => {
                   Reach out to us through any of these channels or fill out the form.
                 </p>
               </div>
-              
+
               <Card className="border border-border">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 text-accent flex-shrink-0">
@@ -135,11 +146,11 @@ const Contact = () => {
               <Card className="border border-border">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 text-accent flex-shrink-0">
-                    <MapPin className="h-5 w-5" />
+                    <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">Remote-First Company</p>
+                    <h3 className="font-semibold text-foreground mb-1">Phone Number</h3>
+                    <p className="text-muted-foreground">+91 9337903728</p>
                   </div>
                 </CardContent>
               </Card>
