@@ -10,7 +10,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
-              <img src="/cyrussaas-logo.png" alt="CyrusSaaS Logo" className="h-8 w-auto" />
+              <img
+  src="/cyrussaas-logo.png"
+  alt="CyrusSaaS Logo"
+  className="h-8 w-auto footer-logo"
+/>
             </Link>
             <p className="text-primary-foreground/80 max-w-md">
               Empowering startups and growing companies to scale efficiently with
