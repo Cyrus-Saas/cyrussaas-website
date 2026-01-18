@@ -13,7 +13,7 @@ const Footer = () => {
               <img
   src="/cyrussaas-logo.png"
   alt="CyrusSaaS Logo"
-  className="h-8 w-auto footer-logo"
+  className="h-8 w-auto"
 />
             </Link>
             <p className="text-primary-foreground/80 max-w-md">
