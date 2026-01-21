@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          
+
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
@@ -88,6 +88,11 @@ const Footer = () => {
               <li>
                 <Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Terms & Conditions
                 </Link>
               </li>
             </ul>

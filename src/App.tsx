@@ -8,6 +8,7 @@ import ITServices from "./pages/ITServices";
 import MicroSaaS from "./pages/MicroSaaS";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Terms from "./pages/Terms";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/it-services" element={<ITServices />} />
           <Route path="/microsaas" element={<MicroSaaS />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<Terms />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

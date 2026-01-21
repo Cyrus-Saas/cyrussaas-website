@@ -142,8 +142,8 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">MicroSaaS Products</h3>
                 <p className="text-muted-foreground mb-6">
-                  Subscription-based tools designed to integrate seamlessly with your existing 
-                  SaaS platforms. Modular, scalable, and built to enhance your product's capabilities.
+                  Agentic AI Ready integrations designed to help you scale faster and bigger.
+                  Our modular tools act as the foundation for your future digital employees.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-muted-foreground">

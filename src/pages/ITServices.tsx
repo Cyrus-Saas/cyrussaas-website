@@ -8,23 +8,28 @@ const ITServices = () => {
   const services = [
     {
       icon: Code,
-      title: "Custom Application Development",
-      description: "Tailored software solutions built from the ground up to meet your specific business needs and workflows.",
+      title: "Website Development",
+      price: "₹9,999",
+      description: "Professional websites tailored to your business needs.",
     },
     {
       icon: Server,
-      title: "Platform Engineering",
-      description: "Robust, scalable platforms designed to support your growing user base and evolving requirements.",
-    },
-    {
-      icon: Database,
-      title: "System Integration",
-      description: "Seamless integration of disparate systems to create unified, efficient business operations.",
+      title: "Mobile App Development",
+      price: "₹49,999",
+      description: "Feature-rich mobile applications for iOS and Android.",
     },
     {
       icon: Workflow,
-      title: "Process Automation",
-      description: "Streamline operations with intelligent automation that reduces manual effort and improves accuracy.",
+      title: "Game Development",
+      price: "₹79,999",
+      description: "Immersive gaming experiences and interactive solutions.",
+    },
+    {
+      icon: Database, 
+      title: "SEO Services",
+      price: "₹6,999",
+      period: "/month",
+      description: "Make your website reach rank 1* on Google searches.",
     },
   ];
 
@@ -70,12 +75,19 @@ const ITServices = () => {
               requirements. From concept to deployment, we deliver solutions that drive 
               real business outcomes.
             </p>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">
-              <Link to="/contact">
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">
+                <Link to="/contact">
+                  Start Your Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                <a href="tel:9337903728">
+                  Call Us Now: +91 93379 03728
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -85,21 +97,35 @@ const ITServices = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What We Build
+              Our Services & Pricing
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive development services covering the full technology spectrum
+              Transparent pricing for high-quality development services
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="border border-border hover:border-accent/50 hover:shadow-lg transition-all">
-                <CardContent className="p-6">
+              <Card key={index} className="border border-border hover:border-accent/50 hover:shadow-lg transition-all flex flex-col h-full">
+                <CardContent className="p-6 flex flex-col flex-grow">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-accent/10 text-accent mb-4">
                     <service.icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground mb-6 flex-grow">{service.description}</p>
+                  
+                  <div className="mt-auto pt-4 border-t border-border">
+                    <div className="flex items-baseline mb-1">
+                      <span className="text-sm text-muted-foreground mr-2">Starting from</span>
+                      <span className="text-4xl md:text-5xl font-bold text-accent">
+                        {service.price}
+                        <span className="text-accent/60 text-2xl">*</span>
+                      </span>
+                      {service.period && <span className="text-sm text-muted-foreground ml-1">{service.period}</span>}
+                    </div>
+                    <Link to="/terms" className="text-xs text-muted-foreground hover:text-accent  decoration-dotted">
+                      * Terms and conditions apply
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             ))}
