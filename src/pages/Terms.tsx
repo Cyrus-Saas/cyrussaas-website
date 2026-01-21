@@ -95,7 +95,32 @@ const Terms = () => {
                             </CardContent>
                         </Card>
 
-                        <div className="flex justify-center pt-8">
+                        <Card className="border border-border">
+              <CardContent className="p-8">
+                <h2 className="text-2xl font-bold mb-4 text-foreground">4. SEO & Search Rankings Disclaimer</h2>
+                <div className="prose prose-gray dark:prose-invert max-w-none">
+                  <p className="text-muted-foreground mb-4">
+                    Regarding our SEO services and the mention of "Rank 1 on Google":
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                    <li>
+                      <strong>Provisional Goal:</strong> Reaching "Rank 1" is a target objective we aim for through rigorous optimization. 
+                      However, this is <strong>not a legally binding guarantee</strong>.
+                    </li>
+                    <li>
+                      <strong>Visibility Improvement:</strong> Our ₹6,999/month plan is designed to significantly increase your website's visibility, 
+                      traffic, and search presence using industry-standard best practices.
+                    </li>
+                    <li>
+                      <strong>External Factors:</strong> Search engine algorithms (like Google's) change frequently and depend on hundreds of factors beyond our control (competitor activity, domain age, etc.). 
+                      While we maximize your chances, we cannot guarantee specific ranking positions.
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="flex justify-center pt-8">
                             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">
                                 <Link to="/contact">
                                     Request Custom Quote
