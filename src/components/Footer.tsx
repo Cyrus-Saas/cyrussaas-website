@@ -95,6 +95,11 @@ const Footer = () => {
                   Terms & Conditions
                 </Link>
               </li>
+              <li>
+                <Link to="/policy" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Company Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
