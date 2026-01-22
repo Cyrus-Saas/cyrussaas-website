@@ -25,11 +25,11 @@ const ITServices = () => {
       description: "Immersive gaming experiences and interactive solutions.",
     },
     {
-      icon: Database, 
+      icon: Database,
       title: "SEO Services",
       price: "₹6,999",
       period: "/month",
-      description: "Make your website reach rank 1* on Google searches.",
+      description: "Optimize your site for Rank 1* on Google searches.",
     },
   ];
 
@@ -71,8 +71,8 @@ const ITServices = () => {
               <span className="text-accent">Growing Businesses</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              We build enterprise-grade applications and platforms tailored to your unique 
-              requirements. From concept to deployment, we deliver solutions that drive 
+              We build enterprise-grade applications and platforms tailored to your unique
+              requirements. From concept to deployment, we deliver solutions that drive
               real business outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -112,7 +112,7 @@ const ITServices = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{service.title}</h3>
                   <p className="text-muted-foreground mb-6 flex-grow">{service.description}</p>
-                  
+
                   <div className="mt-auto pt-4 border-t border-border">
                     <div className="flex items-baseline mb-1">
                       <span className="text-sm text-muted-foreground mr-2">Starting from</span>
@@ -148,7 +148,7 @@ const ITServices = () => {
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-card rounded-lg p-6 h-full border border-border">
-                  <span className="text-4xl font-bold text-accent/30 mb-4 block">
+                  <span className="text-4xl font-bold text-gold-dark mb-4 block">
                     {step.step}
                   </span>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{step.title}</h3>
@@ -174,7 +174,7 @@ const ITServices = () => {
                 Why Partner with CyrusSaaS?
               </h2>
               <p className="text-muted-foreground mb-8">
-                We don't just build software—we build partnerships. Our team becomes an 
+                We don't just build software—we build partnerships. Our team becomes an
                 extension of yours, dedicated to your success.
               </p>
               <ul className="space-y-4">
@@ -196,7 +196,7 @@ const ITServices = () => {
               <Users className="h-12 w-12 text-accent mb-6" />
               <h3 className="text-2xl font-bold mb-4">Ready to Build?</h3>
               <p className="text-primary-foreground/80 mb-6">
-                Whether you have a detailed specification or just an idea, we're here to 
+                Whether you have a detailed specification or just an idea, we're here to
                 help bring your vision to life.
               </p>
               <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-dark w-full">
