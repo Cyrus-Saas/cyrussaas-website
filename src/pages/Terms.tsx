@@ -20,6 +20,9 @@ const Terms = () => {
                         <p className="text-lg text-muted-foreground mb-8">
                             Please read these terms carefully regarding our services, pricing, and project scope.
                         </p>
+                        <p className="text-sm text-muted-foreground mb-8">
+                            Last Updated: {new Date().toLocaleDateString()}
+                        </p>
                     </div>
                 </div>
             </section>
@@ -95,7 +98,7 @@ const Terms = () => {
                             </CardContent>
                         </Card>
 
-                        <Card className="border border-border">
+            <Card className="border border-border">
               <CardContent className="p-8">
                 <h2 className="text-2xl font-bold mb-4 text-foreground">4. SEO & Search Rankings Disclaimer</h2>
                 <div className="prose prose-gray dark:prose-invert max-w-none">
@@ -118,6 +121,110 @@ const Terms = () => {
                   </ul>
                 </div>
               </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">5. Payments & Refunds</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                            <li>
+                                <strong>Payment Schedule:</strong> A 50% non-refundable deposit is required to commence work. The remaining balance is due prior to final project handover.
+                            </li>
+                            <li>
+                                <strong>Refund Policy:</strong> Once development has commenced, the initial deposit is non-refundable as it covers our resource allocation and setup costs.
+                            </li>
+                        </ul>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">6. Limitation of Liability</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            To the maximum extent permitted by law, CyrusSaaS shall not be liable for any indirect, incidental, or consequential damages, including but not limited to loss of profits, data, or business interruption.
+                        </p>
+                        <p className="text-muted-foreground">
+                            <strong>Total Liability:</strong> Our total liability for any claim shall not exceed the amount actually paid by you for the specific service in dispute.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">7. Intellectual Property (IP) Rights</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                            <li>
+                                <strong>Client Ownership:</strong> Upon full payment, the Client owns the final output/website.
+                            </li>
+                            <li>
+                                <strong>Agency Rights:</strong> CyrusSaaS retains the right to reuse generic code snippets, libraries, and tools used to build the project.
+                            </li>
+                            <li>
+                                <strong>Promotional Rights:</strong> CyrusSaaS retains the right to display the completed project in our portfolio and marketing materials as a demonstration of our work.
+                            </li>
+                        </ul>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">8. Client Responsibilities</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            The Client agrees to provide all necessary assets (text, images, credentials) within 7 days of request. Delays by the Client will extend the project timeline.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">9. Governing Law</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            These terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Bhubaneswar, Odisha.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">10. Warranty & Support</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            We provide a <strong>30-day warranty period</strong> following the project handover. During this time, we will fix any bugs related to our code at no extra cost. Any issues reported after 30 days, or issues caused by third-party updates (e.g., Third Party API updates, server changes, etc) or client modifications, will be billed at our standard hourly rate.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">11. Third-Party Services</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            Our solutions may integrate with third-party tools (e.g., hosting providers, payment gateways, APIs). CyrusSaaS is not responsible for any downtime, data loss, or price changes caused by these third-party providers. All third-party costs are the direct responsibility of the Client.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
+
+            <Card className="border border-border">
+                <CardContent className="p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">12. Project Termination</h2>
+                    <div className="prose prose-gray dark:prose-invert max-w-none">
+                        <p className="text-muted-foreground mb-4">
+                            CyrusSaaS reserves the right to terminate a project due to non-payment, lack of communication (ghosting for &gt;14 days), or professional misconduct. In such cases, the initial deposit remains non-refundable, and any completed work will be handed over "as-is" upon settlement of outstanding invoices.
+                        </p>
+                    </div>
+                </CardContent>
             </Card>
 
             <div className="flex justify-center pt-8">
