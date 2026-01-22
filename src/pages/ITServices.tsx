@@ -122,7 +122,7 @@ const ITServices = () => {
                       </span>
                       {service.period && <span className="text-sm text-muted-foreground ml-1">{service.period}</span>}
                     </div>
-                    <Link to="/terms" className="text-xs text-muted-foreground hover:text-accent  decoration-dotted">
+                    <Link to="/terms-of-service" className="text-xs text-muted-foreground hover:text-accent  decoration-dotted">
                       * Terms and conditions apply
                     </Link>
                   </div>
