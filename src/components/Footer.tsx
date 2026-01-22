@@ -90,6 +90,15 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Policy */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4 text-accent">
+              Policy
+            </h4>
+            <ul className="space-y-2">
               <li>
                 <Link to="/terms" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   Terms & Conditions
@@ -98,6 +107,11 @@ const Footer = () => {
               <li>
                 <Link to="/policy" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   Company Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>

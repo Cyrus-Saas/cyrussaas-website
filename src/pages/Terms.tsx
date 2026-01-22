@@ -18,7 +18,7 @@ const Terms = () => {
                             Terms and <span className="text-accent">Conditions</span>
                         </h1>
                         <p className="text-lg text-muted-foreground mb-4">
-                            These terms constitute a legally binding agreement between you ("Client") and CyrusSaaS ("Agency").
+                            CyrusSaaS (a pre‑incorporation entity, proposed to be incorporated as CyrusSaaS Private Limited)
                         </p>
                         <p className="text-sm text-muted-foreground mb-8">
                             Last Updated: {new Date().toLocaleDateString()}
@@ -33,117 +33,98 @@ const Terms = () => {
                         
                         <Card className="border border-border">
                             <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">1. Acceptance of Terms</h2>
                                 <div className="prose prose-gray dark:prose-invert max-w-none">
+                                    <p className="text-muted-foreground mb-6">
+                                        These Terms and Conditions (“Terms”) constitute a legally binding agreement under the Indian Contract Act, 1872 and the Information Technology Act, 2000, between:
+                                    </p>
+                                    <p className="text-muted-foreground mb-6">
+                                        <strong>CyrusSaaS</strong>, a pre‑incorporation entity proposed to be incorporated as CyrusSaaS Private Limited, having its principal place of business at Bhubaneswar, Odisha, India (“Company”, “We”, “Us”, “Our”)
+                                    </p>
+                                    <p className="text-muted-foreground mb-6">
+                                        and
+                                    </p>
+                                    <p className="text-muted-foreground mb-8">
+                                        Any individual, company, or entity engaging our services or using our website or products (“Client”, “You”, “Your”).
+                                    </p>
+                                    <p className="text-muted-foreground mb-8">
+                                        By accessing our website, executing a proposal, making payment, or using our services, you agree to be bound by these Terms.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">1. Scope of Services</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We provide IT consulting, software development, MicroSaaS products, AI solutions, integrations, deployment, maintenance, and related professional services. The exact scope shall be defined in written proposals, Statements of Work (SOW), or invoices.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">2. Electronic Contract Validity</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        This agreement is an electronic record under Section 10A of the Information Technology Act, 2000 and is legally enforceable without physical signatures.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">3. Intellectual Property</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        Upon full payment, the Client shall own the final deliverables created specifically for them.
+                                        CyrusSaaS retains ownership of all pre‑existing code, frameworks, libraries, methodologies, templates, tools, and generic components.
+                                        We retain the right to reuse non‑confidential technical know‑how and generalized code structures.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">4. Confidentiality</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        All business information, source code, credentials, system access, data, and trade secrets shared shall be treated as confidential. This obligation survives termination.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">5. Data Protection</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We shall process personal and sensitive data in accordance with the Digital Personal Data Protection Act, 2023 (India) and applicable international data protection laws. Third‑party hosting and cloud providers may process data as sub‑processors.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">6. Limitation of Liability</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        To the maximum extent permitted by law, our total liability arising out of any claim shall be limited to the total fees paid by the Client for the specific service giving rise to the claim.
+                                        We shall not be liable for indirect, consequential, incidental, or loss‑of‑profit damages.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">7. No Guarantee</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We provide services on a best‑effort basis. No guarantee is made regarding revenue, user growth, SEO rankings, business success, uptime, or market performance.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">8. Third‑Party Services</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We are not responsible for failures, downtime, pricing changes, security breaches, or policy changes of third‑party platforms including but not limited to cloud providers, APIs, payment gateways, and software tools.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">9. Force Majeure</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We shall not be liable for delays or failures caused by events beyond reasonable control including natural disasters, government actions, internet outages, war, pandemics, labor strikes, or infrastructure failures.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">10. No Partnership or Employment</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        Nothing herein creates a partnership, joint venture, or employment relationship. We act solely as an independent contractor.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">11. Indemnity</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        Client agrees to indemnify and hold CyrusSaaS harmless against claims arising from Client content, data, misuse of services, or violation of law.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">12. Termination</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        Either party may terminate for breach with written notice. Outstanding payments remain payable upon termination.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">13. Arbitration</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        All disputes shall be resolved by arbitration under the Arbitration and Conciliation Act, 1996.
+                                        Seat and venue of arbitration: Bhubaneswar, Odisha, India.
+                                        Language: English.
+                                        The arbitral award shall be final and binding.
+                                    </p>
+
+                                    <h2 className="text-2xl font-bold mb-4 text-foreground">14. Governing Law & Jurisdiction</h2>
                                     <p className="text-muted-foreground">
-                                        By hiring CyrusSaaS, paying a deposit, or using our services, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions.
+                                        These Terms shall be governed by the laws of India. Courts at Bhubaneswar, Odisha shall have exclusive jurisdiction for interim relief and enforcement.
                                     </p>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">2. Scope of Services</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground mb-4">
-                                        We provide two distinct categories of service:
-                                    </p>
-                                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
-                                        <li>
-                                            <strong>Standard Packaged Solutions:</strong> Template-based, rapid-deployment websites with fixed features.
-                                        </li>
-                                        <li>
-                                            <strong>Custom Enterprise Development:</strong> Tailored software solutions with unique UI/UX, specific scaling capabilities, and custom backend logic.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">3. Intellectual Property (IP) Rights</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
-                                        <li>
-                                            <strong>Client Ownership:</strong> Upon full payment of all invoices, the Client is granted full ownership of the final website/software output.
-                                        </li>
-                                        <li>
-                                            <strong>Agency Rights:</strong> CyrusSaaS retains valid ownership of underlying technologies, generic code snippets, libraries, and developer tools used to build the project.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">4. Limitation of Liability</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground mb-4">
-                                        To the maximum extent permitted by applicable law:
-                                    </p>
-                                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                                        <li>
-                                            CyrusSaaS shall <strong>not be liable</strong> for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, use, goodwill, or other intangible losses.
-                                        </li>
-                                        <li>
-                                            Our total cumulative liability for any claim arising out of or relating to these terms or the services shall not exceed the total amount actually paid by you to us for the specific service giving rise to the claim.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">5. Indemnification</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground">
-                                        You agree to indemnify and hold harmless CyrusSaaS and its employees from any claims, damages, liabilities, costs, or expenses (including legal fees) arising from: (a) your use of the services; (b) any content/data provided by you; or (c) your violation of any third-party rights.
-                                    </p>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">6. Governing Law & Jurisdiction</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground">
-                                        These Terms shall be governed by and construed in accordance with the laws of India. Any legal suit, action, or proceeding arising out of or related to these Terms shall be instituted exclusively in the courts of <strong>Bhubaneswar, Odisha</strong>.
-                                    </p>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">7. Third-Party Services Disclaimer</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground">
-                                        Our services may involve integrations with third-party tools (e.g., Google, AWS, Payment Gateways, Hosting Providers). We are not responsible for the availability, accuracy, performance, or pricing changes of these third-party services. Any costs associated with third-party services are the sole responsibility of the Client.
-                                    </p>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border border-border">
-                            <CardContent className="p-8">
-                                <h2 className="text-2xl font-bold mb-4 text-foreground">8. SEO & Rankings Disclaimer</h2>
-                                <div className="prose prose-gray dark:prose-invert max-w-none">
-                                    <p className="text-muted-foreground mb-4">
-                                        While we employ industry-standard best practices for Search Engine Optimization (SEO):
-                                    </p>
-                                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                                        <li>
-                                            We <strong>do not guarantee</strong> any specific search engine ranking, position, or traffic numbers. "Rank 1" mentions are target objectives, not contractual promises.
-                                        </li>
-                                        <li>
-                                            Search engine algorithms change frequently, and factors such as domain authority, competition, and content quality play a significant role beyond technical optimization.
-                                        </li>
-                                    </ul>
                                 </div>
                             </CardContent>
                         </Card>
@@ -153,11 +134,6 @@ const Terms = () => {
                                 <Link to="/contact">
                                     Agree & Start Project
                                     <ArrowRight className="ml-2 h-5 w-5" />
-                                </Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                                <Link to="/policy">
-                                    View Company Policy
                                 </Link>
                             </Button>
                         </div>
