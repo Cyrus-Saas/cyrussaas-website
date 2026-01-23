@@ -4,9 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 
+import SEO from "@/components/SEO";
+
 const Index = () => {
   return (
     <Layout>
+      <SEO
+        title="CyrusSaaS - IT Services & MicroSaaS Solutions"
+        description="Scale Your Business with Enterprise-Ready Solutions. CyrusSaaS provides custom software and Agentic AI integrations to help you grow faster and smarter."
+        keywords="CyrusSaaS, IT Services, MicroSaaS, Software Development, Enterprise Solutions"
+        canonicalUrl="/"
+      />
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
@@ -20,7 +28,7 @@ const Index = () => {
               <span className="text-accent">Enterprise-Ready</span> Solutions
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              CyrusSaaS helps startups and growing companies scale efficiently through 
+              CyrusSaaS helps startups and growing companies scale efficiently through
               custom IT solutions and MicroSaaS integrations that enhance your existing platforms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -107,8 +115,8 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">IT Services</h3>
                 <p className="text-muted-foreground mb-6">
-                  Custom software development and project-based solutions tailored to your 
-                  unique business requirements. We build applications, platforms, and systems 
+                  Custom software development and project-based solutions tailored to your
+                  unique business requirements. We build applications, platforms, and systems
                   that power your operations.
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -179,7 +187,7 @@ const Index = () => {
               Ready to Scale Your Business?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8">
-              Let's discuss how CyrusSaaS can help you achieve your growth objectives 
+              Let's discuss how CyrusSaaS can help you achieve your growth objectives
               with the right technology solutions.
             </p>
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">

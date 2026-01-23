@@ -3,10 +3,17 @@ import { FileText, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 
 const Terms = () => {
     return (
         <Layout>
+            <SEO 
+                title="Terms & Conditions - CyrusSaaS"
+                description="CyrusSaaS Legal Terms & Conditions. Detailed contract regarding intellectual property, liability, and service agreements. Read before starting."
+                keywords="Terms and Conditions, Legal Contract, Service Agreement, CyrusSaaS"
+                canonicalUrl="/terms"
+            />
             <section className="py-20 md:py-28 bg-gradient-to-br from-secondary/50 via-transparent to-primary/5">
                 <div className="container">
                     <div className="max-w-4xl mx-auto">

@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -100,8 +101,15 @@ const Contact = () => {
     }
   };
 
+
   return (
     <Layout>
+      <SEO
+        title="Contact Us - CyrusSaaS"
+        description="Start Your Digital Transformation. Contact CyrusSaaS for custom quotes, project inquiries, and free consultations. Let's build something great."
+        keywords="Contact CyrusSaaS, Hire Developers, Software Project Inquiry"
+        canonicalUrl="/contact"
+      />
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-transparent to-accent/5">
         <div className="container">

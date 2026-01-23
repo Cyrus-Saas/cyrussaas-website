@@ -3,6 +3,7 @@ import { ArrowRight, Code, Server, Database, Workflow, CheckCircle, Users } from
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const ITServices = () => {
   const services = [
@@ -56,8 +57,15 @@ const ITServices = () => {
     },
   ];
 
+
   return (
     <Layout>
+      <SEO 
+        title="IT Services & Pricing - CyrusSaaS"
+        description="Custom Software Development starting at ₹9,999. Enterprise-grade Mobile Apps, Web Platforms, and Rank 1 SEO services tailored for your growth."
+        keywords="IT Services, Web Development, Mobile Apps, SEO, Pricing, Custom Software"
+        canonicalUrl="/it-services"
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 via-transparent to-accent/5">
         <div className="container">

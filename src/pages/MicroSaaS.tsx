@@ -3,6 +3,7 @@ import { ArrowRight, Layers, Sparkles, Puzzle, Rocket, Lightbulb, Clock } from "
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const MicroSaaS = () => {
   const benefits = [
@@ -23,8 +24,15 @@ const MicroSaaS = () => {
     },
   ];
 
+
   return (
     <Layout>
+      <SEO 
+        title="MicroSaaS Solutions - CyrusSaaS"
+        description="Agentic AI Ready Integrations. Empower your business with digital employees and automated workflows. Future-proof your SaaS today."
+        keywords="MicroSaaS, Agentic AI, Automation, Digital Employees, SaaS Integrations"
+        canonicalUrl="/microsaas"
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-accent/5 via-transparent to-primary/5">
         <div className="container">

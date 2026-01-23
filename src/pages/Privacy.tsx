@@ -3,10 +3,17 @@ import { Lock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 
 const Privacy = () => {
   return (
     <Layout>
+      <SEO 
+        title="Privacy Policy - CyrusSaaS"
+        description="CyrusSaaS Privacy Policy. DPDP Act compliant data protection commitments. How we collect, use, and secure your business sensitive data."
+        keywords="Privacy Policy, Data Protection, GDPR, DPDP Act"
+        canonicalUrl="/privacy"
+      />
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 via-transparent to-accent/5">
         <div className="container">
           <div className="max-w-4xl mx-auto">
