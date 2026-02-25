@@ -12,6 +12,7 @@ import Terms from "./pages/Terms";
 import Policy from "./pages/Policy";
 import Privacy from "./pages/Privacy";
 import TermsOfService from "./pages/TermsOfService";
+import AIStudio from "./pages/AIStudio";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +24,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/it-services" element={<ITServices />} />
-          <Route path="/microsaas" element={<MicroSaaS />} />
+          <Route path="/solutions" element={<ITServices />} />
+          <Route path="/studio" element={<MicroSaaS />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/ai-studio" element={<AIStudio />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/privacy" element={<Privacy />} />

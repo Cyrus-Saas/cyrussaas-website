@@ -9,15 +9,15 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "IT Services", path: "/it-services" },
-    { name: "MicroSaaS", path: "/microsaas" },
+    { name: "AI Solutions", path: "/solutions" },
+    { name: "AI Studio", path: "/ai-studio" },
     { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur supports-[backdrop-filter]:bg-black/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
@@ -38,7 +38,7 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-dark">
+          <Button asChild className="bg-gold text-navy-dark hover:bg-gold-light font-medium">
             <Link to="/contact">Get Started</Link>
           </Button>
         </nav>
@@ -74,7 +74,7 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-gold-dark">
+            <Button asChild className="w-full bg-gold text-navy-dark hover:bg-gold-light font-medium">
               <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                 Get Started
               </Link>

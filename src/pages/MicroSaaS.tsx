@@ -1,180 +1,251 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Layers, Sparkles, Puzzle, Rocket, Lightbulb, Clock } from "lucide-react";
+import {
+  ArrowRight,
+  Sparkles,
+  Layers,
+  Bot,
+  Workflow,
+  Network,
+  Cpu,
+  BrainCircuit,
+  Cog,
+  Shield,
+  BarChart3,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import ParticleCosmos from "@/components/ui/particle-cosmos";
 
 const MicroSaaS = () => {
-  const benefits = [
-    {
-      icon: Puzzle,
-      title: "Seamless Integration",
-      description: "Tools designed to plug directly into your existing SaaS platforms without disruption.",
-    },
-    {
-      icon: Sparkles,
-      title: "Enhanced Capabilities",
-      description: "Add powerful features to your product without building from scratch.",
-    },
-    {
-      icon: Clock,
-      title: "Subscription Model",
-      description: "Predictable costs with flexible subscription plans that scale with your needs.",
-    },
-  ];
-
-
   return (
     <Layout>
-      <SEO 
-        title="MicroSaaS Solutions - CyrusSaaS"
-        description="Agentic AI Ready Integrations. Empower your business with digital employees and automated workflows. Future-proof your SaaS today."
-        keywords="MicroSaaS, Agentic AI, Automation, Digital Employees, SaaS Integrations"
-        canonicalUrl="/microsaas"
+      <SEO
+        title="AI Agent Studio - CyrusSaaS"
+        description="The Agentic AI Studio. We design, build, and deploy multi-agent AI systems that become your autonomous digital workforce."
+        keywords="AI Agent Studio, Agentic AI, Digital Workforce, AI Orchestration, Multi-Agent Platform"
+        canonicalUrl="/studio"
       />
-      {/* Hero Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-accent/5 via-transparent to-primary/5">
-        <div className="container">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
+
+      {/* Hero */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <ParticleCosmos />
+        <div className="container relative z-10 pt-20 pb-32">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold mb-8 shadow-[0_0_15px_rgba(200,160,80,0.2)]">
               <Sparkles className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">Agentic AI Ready Solutions</span>
+              <span className="text-sm font-medium tracking-wide">THE AGENTIC AI STUDIO</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Scale Faster, Bigger, Better with{" "}
-              <span className="text-accent">Agentic AI Ready</span> MicroSaaS
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight tracking-tight">
+              Your AI Workforce,{" "}
+              <span className="text-transparent bg-clip-text gradient-gold">
+                Engineered
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Future-proof your business with modular integrations designed for the era of Digital Employees. 
-              We utilize Agentic AI to help you scale operations without increasing manual workforce.
+
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+              We don't just build chatbots. We architect complete autonomous agent systems —
+              from workflow mapping to production deployment — that replace manual operational roles
+              with intelligent, self-coordinating digital employees.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                asChild
+                size="lg"
+                className="bg-gold text-navy-dark hover:bg-gold-light font-semibold h-12 px-8 text-base"
+              >
                 <Link to="/contact">
-                  Transform Your Business
+                  Start Your AI Transformation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white/20 hover:bg-white/5 h-12 px-8 text-base backdrop-blur-sm"
+              >
+                <Link to="/solutions">View Solutions</Link>
               </Button>
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" />
       </section>
 
-      {/* Benefits/Value Prop Section */}
-      <section className="py-16 md:py-24 bg-secondary/50">
-        <div className="container">
-          <div className="text-center mb-12">
-             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Building the Foundation for the Agentic Future
+      {/* The Studio Process */}
+      <section className="py-24 bg-background relative border-t border-white/5">
+        <div className="container relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              How the Studio Works
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our MicroSaaS solutions are architected to seamlessly integrate with future Agentic AI systems,
-              enabling autonomous workflows and digital workforce scaling.
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              A rigorous, architecture-first methodology. From mapping your operational
+              workflows to deploying a self-managing agent fleet.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-             <Card className="border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="p-8">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-accent/10 text-accent mb-6">
-                  <Rocket className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Scale Faster & Bigger</h3>
-                <p className="text-muted-foreground">
-                  Accelerate growth with tools that automate complex processes, allowing you to expand 
-                  operations without the bottleneck of traditional hiring.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="p-8">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-accent/10 text-accent mb-6">
-                  <Sparkles className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Agentic AI Ready</h3>
-                <p className="text-muted-foreground">
-                  Every solution we build is pre-configured to interact with Agentic AI, serving as the 
-                  hands and eyes for your future digital employees.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="p-8">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-accent/10 text-accent mb-6">
-                  <Puzzle className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Digital Employee Integration</h3>
-                <p className="text-muted-foreground">
-                  Replace manual tasks with intelligent automated workflows. Our ready-made integrations 
-                  act as the toolkit for your virtual workforce.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Discover & Map",
+                icon: Workflow,
+                desc: "We map your existing workflows, identify automation opportunities, and define the agent architecture.",
+              },
+              {
+                step: "02",
+                title: "Design & Architect",
+                icon: Layers,
+                desc: "Agent roles, tool registries, memory systems, and orchestration logic — all designed before a line of code.",
+              },
+              {
+                step: "03",
+                title: "Build & Integrate",
+                icon: Cpu,
+                desc: "We build each agent, connect your APIs, integrate your tools, and wire it all into the orchestrator.",
+              },
+              {
+                step: "04",
+                title: "Deploy & Monitor",
+                icon: BarChart3,
+                desc: "Production deployment with real-time monitoring, error recovery, and continuous optimization.",
+              },
+            ].map((item, idx) => (
+              <Card
+                key={idx}
+                className="bg-card/50 border-white/10 hover:border-gold/30 transition-all duration-300 group relative overflow-hidden"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-gold/50 font-mono text-sm font-bold">{item.step}</span>
+                    <item.icon className="h-5 w-5 text-gold" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Coming Soon / Call to Action Section */}
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <Card className="border-2 border-dashed border-accent/50 bg-accent/5">
-            <CardContent className="p-8 md:p-12 text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/20 text-accent mb-6">
-                <Lightbulb className="h-10 w-10" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Make Your Company Agentic AI Ready
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Don't just build for today. Architect for a future where your SaaS product interacts 
-                seamlessly with autonomous agents. Let's build your "Agentic AI Ready" ecosystem together.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-gold-dark">
-                  <Link to="/contact">
-                    Start Your Transformation
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Bottom Value Prop */}
-      <section className="py-16 md:py-24">
-        <div className="container text-center">
-           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
-              The Agentic Advantage
+      {/* Agent Capabilities */}
+      <section className="py-24 bg-navy-dark relative border-y border-white/5 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(200,160,80,0.05)_0%,transparent_60%)] pointer-events-none" />
+        <div className="container relative z-10">
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              What Our Agents Can Do
             </h2>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="text-center border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="pt-8 pb-8">
-                <div className="text-4xl font-bold text-accent mb-2">100%</div>
-                <p className="text-muted-foreground">AI Integration Ready</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="pt-8 pb-8">
-                <div className="text-4xl font-bold text-accent mb-2">0</div>
-                <p className="text-muted-foreground">Manual Employees Needed for Integrated Tasks</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center border border-border hover:border-accent/50 transition-colors">
-              <CardContent className="pt-8 pb-8">
-                <div className="text-4xl font-bold text-accent mb-2">10x</div>
-                <p className="text-muted-foreground">Faster Scaling Velocity</p>
-              </CardContent>
-            </Card>
+            <p className="text-muted-foreground max-w-2xl text-lg">
+              Each agent in the system is purpose-built with specific capabilities,
+              memory, and tool access.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Bot,
+                title: "Autonomous Task Execution",
+                desc: "Agents that independently plan, execute, and verify multi-step tasks without human intervention.",
+              },
+              {
+                icon: Network,
+                title: "Inter-Agent Communication",
+                desc: "Agents coordinate with each other, share context, and delegate subtasks across the system.",
+              },
+              {
+                icon: BrainCircuit,
+                title: "Persistent Memory",
+                desc: "Long-term memory via vector databases. Agents remember past interactions, decisions, and context.",
+              },
+              {
+                icon: Cog,
+                title: "Tool & API Usage",
+                desc: "Agents use your existing tools — APIs, databases, CRMs, file systems — as their operational interface.",
+              },
+              {
+                icon: Shield,
+                title: "Secure Execution",
+                desc: "Sandboxed execution environments with role-based access, audit trails, and encrypted communication.",
+              },
+              {
+                icon: BarChart3,
+                title: "Self-Monitoring",
+                desc: "Built-in observability. Agents report their status, flag anomalies, and trigger escalation protocols.",
+              },
+            ].map((cap, idx) => (
+              <div
+                key={idx}
+                className="bg-card/30 border border-white/5 rounded-xl p-6 hover:border-gold/20 transition-colors"
+              >
+                <cap.icon className="h-8 w-8 text-gold mb-4" />
+                <h4 className="text-lg font-bold text-foreground mb-2">{cap.title}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{cap.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      </Layout>
-    );
+
+      {/* The Agentic Advantage Stats */}
+      <section className="py-24 bg-background relative">
+        <div className="container relative z-10 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-16">
+            The Agentic Advantage
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { stat: "100%", label: "Autonomous Operation" },
+              { stat: "24/7", label: "Always-On Digital Workforce" },
+              { stat: "10x", label: "Faster Workflow Execution" },
+            ].map((item, idx) => (
+              <Card key={idx} className="bg-card/50 border-white/10 hover:border-gold/30 transition-colors">
+                <CardContent className="p-8 text-center">
+                  <div className="text-5xl font-bold text-transparent bg-clip-text gradient-gold mb-3">
+                    {item.stat}
+                  </div>
+                  <p className="text-muted-foreground font-medium">{item.label}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 bg-navy relative overflow-hidden">
+        <div className="absolute inset-0 gradient-gold-bg opacity-10 mix-blend-overlay" />
+        <div className="container relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Build Your Digital Workforce Today
+            </h2>
+            <p className="text-white/80 text-xl mb-10">
+              Stop hiring for tasks. Start deploying agents.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-gold text-navy-dark hover:bg-gold-light font-bold h-14 px-10 text-lg shadow-[0_0_20px_rgba(200,160,80,0.3)]"
+            >
+              <Link to="/contact">
+                Initiate Your Project
+                <ArrowRight className="ml-2 h-6 w-6" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 };
 
 export default MicroSaaS;
