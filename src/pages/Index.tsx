@@ -75,9 +75,7 @@ const Index = () => {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
             >
-              Multi-agent AI systems that automate your operations,
-              replace manual workflows, and deploy a digital workforce
-              that works 24/7.
+              Multi-agent AI systems that automate your operations and replace manual workflows. We help you integrate AI agents into your systems to make your tech future-ready, AI-ready, and digital-employee ready.
             </motion.p>
 
             <motion.div
